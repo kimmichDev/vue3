@@ -1,0 +1,22 @@
+{
+    "members" : [
+        {
+          "id": 1,
+          "name": "James Orwell",
+          "age": 21,
+          "address": "H Town, Yangon"
+        },
+        {
+          "id": 2,
+          "name": "Arthur",
+          "age": 34,
+          "address": "Wellington"
+        },
+        {
+          "id": 3,
+          "name": "Mary",
+          "age": 32,
+          "address": "Chicago"
+        }
+    ]
+}
