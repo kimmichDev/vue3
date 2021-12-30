@@ -9,8 +9,8 @@ const appApi = axios.create({
 }
 );
 export default {
-    getMembers() {
-        return appApi.get('/members');
+    getMembers(limit, page) {
+        return appApi.get('/members?_limit=' + limit + "&&_page=" + page);
     },
     getMember(id) {
         return appApi.get('/members/' + id);

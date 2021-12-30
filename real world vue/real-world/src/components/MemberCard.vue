@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="{ name: 'Member', params: { id: member.id } }">
+  <router-link :to="{ name: 'MemberDetail', params: { id: member.id } }">
     <div class="card">
       {{ $route.params.id }}
       <p>Name : {{ member.name }}</p>

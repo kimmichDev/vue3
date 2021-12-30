@@ -1,9 +1,9 @@
 <template>
   <!-- <div>{{ $route.params.id }}</div> -->
   <div v-if="member">
-    <h1>{{ member.name }}</h1>
-    <p>{{ member.age }} Old</p>
-    <address>{{ member.address }}</address>
+    <router-link :to="{ name: 'MemberDetail' }">Detail</router-link> || <router-link :to="{ name: 'MemberRegister' }">Register</router-link> ||
+    <router-link :to="{ name: 'MemberEdit' }">Edit</router-link>
+    <router-view :member="member"></router-view>
   </div>
   <div v-else>
     <div class="boxes">
@@ -41,7 +41,7 @@
 <script>
 import Service from "@/services/Service.js";
 export default {
-  name: "MemberDetail",
+  name: "Layout",
   props: {
     id: {
       type: Number,
